@@ -1,5 +1,5 @@
 import streamlit as st
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import pickle
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -23,9 +23,9 @@ with st.sidebar:
     ''')
     st.write('Made with ⚡ by [Sparks](https://www.fiverr.com/shehansolutions?source=inbox)')
 
-load_dotenv()
+# load_dotenv()
 
-
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 def main():
     st.header("Ask about Neuroscience 💬")
 
